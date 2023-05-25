@@ -25,8 +25,7 @@ public class MergeTwoSortedList {
 			tobe = tobe.next;
 			list2 = list2.next;
 		}
-		
-		return tobe;
+		return dummy.next;
     }
     
 }
