@@ -2,7 +2,7 @@ package easy;
 
 /**
  * Definition for singly-linked list.*/
-   class ListNode {
+  /* class ListNode {
       int val;
       ListNode next;
       ListNode() {}
@@ -39,4 +39,4 @@ package easy;
         }         
         return head;
     }
-}
+}*/
