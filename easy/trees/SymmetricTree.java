@@ -1,4 +1,4 @@
-package easy;
+package trees;
 
 import java.util.*;
 

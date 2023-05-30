@@ -1,4 +1,4 @@
-package easy;
+package trees;
 
 public class ConvertSortedArraytoBinarySearchTree {
 
