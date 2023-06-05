@@ -1,4 +1,4 @@
-package easy;
+package LinkedList;
 
 /**
  * Definition for singly-linked list.*/
