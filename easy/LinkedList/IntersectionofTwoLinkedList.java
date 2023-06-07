@@ -3,12 +3,14 @@ import java.util.*;
 public class IntersectionofTwoLinkedList {
 	
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-    	HashSet<ListNode> first = new HashSet<>();
-        while(headA != null && headB != null) {
-        	int preSize = first.size();
-        	first.add(headA); first.add(headB);
-        	if(first.size()-2 != preSize) return headA;
-        	headA = headA.next; headB=headB.next;
+    	HashSet<ListNode> hashed = new HashSet<>();
+        while(headA != null) {
+        	hashed.add(headA);
+        	headA = headA.next;
+        }
+        while(headB!=null) {
+        	if(hashed.contains(headB)) return headB;
+        	headB=headB.next;
         }
         return null;
     }
